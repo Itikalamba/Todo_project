@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0;
+}
+body {
+  position:relative;
+  font-family:cursive;
+}
+nav {
+  background-color:#DE6834;
+  height: 50px;
+  padding: 10px;
+  box-shadow: 5px 6px 12px #888888;
+}
+.navbar {
+  display: flex;
+  font-size: large;
+  font-weight: bold;
+  max-width: 1350px;
+  margin: 0 auto;
+  color: aliceblue;
+  justify-content: space-between;
+  letter-spacing: 2px;
+}
+.overlay{
+    background-color: #DE6834;
+    opacity:.2;
+    height:100vh;
+    width:100vw;
+    z-index:-999;
+    position:absolute;
+}
+.todopanel {
+  display: flex;
+  max-width: 1350px;
+  margin: 0 auto;
+  margin-top: 50px;
+  justify-content: space-between;
+}
+.leftpane {
+ 
+  padding: 18px;
+  max-width: 650px;
+  box-shadow: 2px 4px 14px grey;
+  min-height: 500px;
+}
+.rightpane {
+   
+  padding: 20px;
+  max-width: 650px;
+  box-shadow: 2px 4px 14px grey;
+}
+.main-heading {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+.task-heading {
+  height:40px;
+  width:40px;
+  background-color: #DE6834;
+  border-radius:5px;
+  color: white;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  font-size:20px;
+  font-weight:bold;
+  transition:.7s;
+}
+.task-heading:hover{
+transform:translateY(-15px);
+}
+
+#task-detail,
+#name-detail {
+  margin: 14px 0;
+  width: 100%;
+  font-size: large;
+  padding: 6px;
+  border: none;
+  border-bottom: 2px solid grey;
+  border-bottom-width: 1px grey;
+  outline: none;
+  background-color: transparent;
+}
+#add-todo {
+  margin-top: 8px;
+  background-color: #DE6834;
+  padding: 8px;
+  color: white;
+  border: none;
+  border-radius: 2px;
+  font-size: large;
+  font-weight: 600;
+  cursor: pointer;
+}
+#displaytasks {
+  margin-top: 12px;
+  width: 100%;
+  padding: 12px;
+  line-height: 20px;
+}
+.todo-element-display {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(175, 175, 175);
+  padding: 4px;
+}
+.btn-of-todo {
+  display: flex;
+  gap: 10px;
+}
+
+.checkbox-btn {
+  width: 20px;
+  height: 20px;
+}
